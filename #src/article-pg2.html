@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Article",
+})
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html',{
+        "link":"1"
+        })
+        <main class="page">
+            <div class="article">
+                <h1 class="article__title">Todo-list</h1>
+                <div class="article__info">
+                    <div class="article__year">2022</div>
+                    <div class="article__category">Pet project</div>
+                </div>
+                <div class="article__text">
+                    <p>
+                        My next project on React, each of the projects makes a great contribution to my knowledge and after a while, looking at the first projects, you understand how much you have grown in knowledge and spent time not in vain.
+                        <br>
+                        <a href="https://klakclok.github.io/todo-list/" target="_blank">View project</a>
+                    </p>
+                    <img src="img/article/04.jpg" alt="">
+                    <p>
+                        
+                    </p>
+                    
+                </div>
+            </div>
+        </main>
+        @@include('_footer.html',{})
+    </div>
+    @@include('_js.html',{})
+</body>
+
+</html>
