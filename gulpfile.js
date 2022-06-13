@@ -1,7 +1,17 @@
 //let replace = require('gulp-replace'); //.pipe(replace('bar', 'foo'))
+var gulp   = require('gulp');
+var deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.src("./newProject/**/*")
+    .pipe(deploy({ 
+      remoteUrl: "https://github.com/klakclok/newProject.git",
+      branch: "master"
+    }))
+});
 let { src, dest } = require("gulp");
 let fs = require('fs');
-let gulp = require("gulp");
+
 let browsersync = require("browser-sync").create();
 let autoprefixer = require("gulp-autoprefixer");
 let scss = require('gulp-sass')(require('sass'));
